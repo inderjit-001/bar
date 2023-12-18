@@ -1,0 +1,351 @@
+   
+/* ijs css */
+
+.ijs-banner{
+    position: relative;
+}
+.inner-ijs-icon-bar {
+    display: flex;
+    flex-direction: column;
+}
+.ijs-icon-bar {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    background: #df0c75ba;
+    padding: 0px;
+    z-index: 9999;
+  }
+
+  .ijs-banner-icon-size{
+    width: 35px;
+    padding:0 3px 5px;
+    padding: 9px 3px 5px;
+  }
+  .icon-text-color{
+    color: #ffffff;
+    padding:0 0px 5px;
+    font-size: 12px;
+  }
+  .ijs-first-icon, .ijs-second-icon, .ijs-third-icon, .ijs-fourth-icon, .ijs-fifth-icon{
+    position: relative;
+    width: 150px;
+    padding: 12px 6px;
+  }
+  
+  .ijs-first-icon, .ijs-second-icon, .ijs-third-icon, .ijs-fourth-icon, .ijs-fifth-icon{
+    position: relative;
+    width: 100%;
+    padding: 12px 6px;
+  }
+
+  .ijs-icon-bar-scroll .ijs-first-icon, .ijs-icon-bar-scroll .ijs-second-icon, .ijs-icon-bar-scroll .ijs-third-icon, .ijs-icon-bar-scroll .ijs-fourth-icon, .ijs-icon-bar-scroll .ijs-fifth-icon {
+    position: relative;
+    width: 150px;
+    padding: 12px 0;
+}
+
+  .ijs-first-icon p, .ijs-second-icon p, .ijs-third-icon p, .ijs-fourth-icon p, .ijs-fifth-icon p{
+    margin: 0;
+  }
+ .ijs-link-drop-appointment{
+    position: absolute;
+    right: 113px;
+    background: #ffffff;
+    top: 0px;
+    z-index: 2147483647;
+    display: none;
+  }
+  .ijs-first-icon:hover .ijs-link-drop-appointment, .ijs-first-icon:hover .ijs-link-drop-appointment-scroll {
+    display: block;
+}
+.inner-ijs-icon-bar div#ijs-first-icon {
+    padding: 10px 0 0 0;
+}
+.ijs-first-icon:hover, .ijs-second-icon:hover, .ijs-third-icon:hover, .ijs-fourth-icon:hover, .ijs-fifth-icon:hover {
+background: #ff3c9dfa;
+}
+
+.ijs-link-drop-location{
+    position: absolute;
+    right: 113px;
+    background: #ffffff;
+    top: 0;
+    z-index: 99;
+    display: none;
+  }
+  .ijs-second-icon:hover .ijs-link-drop-location, .ijs-second-icon:hover .ijs-link-drop-location-scroll {
+    display: block;
+}
+
+.ijs-link-drop-form{
+    position: absolute;
+    right: 116px;
+    bottom: -164px;
+    z-index: -1;
+    display: none;
+  }
+  .ijs-third-icon:hover .ijs-link-drop-form, .ijs-third-icon:hover .ijs-link-drop-form-scroll {
+    display: block;
+    min-width: 320px;
+    padding: 0 12px;
+}
+
+.ijs-link-drop-clock{
+    position: absolute;
+    right: 113px;
+    background: #ffffff;
+    top: -3px;
+    z-index: 999;
+    display: none;
+  }
+  .ijs-fourth-icon:hover .ijs-link-drop-clock, .ijs-fourth-icon:hover .ijs-link-drop-clock-scroll {
+    display: block;
+    min-width: 250px;
+    padding: 12px;
+}
+
+.ijs-link-drop-loan{
+    position: absolute;
+    right: 113px;
+    background: #ffffff;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+  }
+  .ijs-fifth-icon:hover .ijs-link-drop-loan {
+    display: block;
+    min-width: 380px;
+    padding: 0;
+}
+
+/* hover */
+
+.inner-ijs-icon-bar-scroll {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.ijs-icon-bar-scroll {
+    position: fixed;
+    top: 122px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-136%);
+    background: #df0c75;
+    /* padding: 12px 0px; */
+    z-index: 9999;
+    /* display: none; */
+    visibility: hidden;
+
+}
+
+
+.ijs-icon-bar-scroll.active {
+    visibility: visible;
+
+}
+
+
+.ijs-first-icon-scroll p{
+margin:0;
+}
+
+
+.ijs-link-drop-form-scroll {
+    position: absolute;
+    right: 0;
+    /* background: #ffffff; */
+    top: 100%;
+    z-index: 9999;
+    display: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ijs-link-drop-clock-scroll {
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    top: 100%;
+    z-index: 999;
+    display: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ijs-link-drop-loan-scroll {
+    position: absolute;
+    right: 0;
+    background: #ffffff !important;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* style appointment */
+
+.icn-list{
+    list-style: none;
+    margin: 0px;
+    padding-left: 0;
+  }
+  h5.vc_custom_heading.link-drop-title {
+    font-size: 18px;
+}
+.icn-list .phone{
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+}
+a.btn.btn-sm.btn-fill {
+    border: 1px solid #DF0C75;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 7px 15px;
+    background: #DF0C75;
+    color: #fff;
+}
+.icn-list .mail{
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+.text-input1 {
+    border-radius: 10px !important;
+    border: 1px solid #575757;
+    width: 100%;
+    padding: 7px 18px !important;
+    margin-bottom: -4px;
+    border-radius: 10px;
+}
+
+.ijs-appointment-box{
+    min-width: 328px;
+    text-align: left;
+    padding: 24px;
+}
+
+.ijs-form-box{
+/* max-width: 328px;  */
+}
+
+.ijs-link-drop-appointment-scroll {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    top: 100%;
+    z-index: 999;
+    display: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.ijs-link-drop-location-scroll {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    top: 100%;
+    z-index: 99;
+    display: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+@media (max-width: 991px){
+   
+.ijs-icon-bar {
+    position: fixed;
+    top: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    background: #df0c76;
+    padding: 0px;
+    z-index: 998;
+	width: 100%;
+    display: none;
+}
+.ijs-first-icon, .ijs-second-icon, .ijs-third-icon, .ijs-fourth-icon, .ijs-fifth-icon{
+    position: relative;
+    width: 100%;
+    padding: 5px !important;
+  }
+.active-mob{
+    display: block;
+}
+.inner-ijs-icon-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 45px 0 0px 0;
+}
+.inner-ijs-icon-bar div#ijs-first-icon {
+    padding: 0;
+}
+p.icon-text-color {
+    display: none;
+}
+.ijs-banner-icon-size {
+    width: 32px;
+}
+
+.ijs-link-drop-appointment {
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    top: 100%;
+    z-index: 999;
+    display: none;
+    left: 0;
+}
+.ijs-link-drop-location {
+    position: absolute;
+    background: #ffffff;
+    top: 100%;
+    z-index: 99;
+    display: none;
+    right: unset;
+    left: -43px;
+}
+
+.ijs-link-drop-form {
+    position: absolute;
+    right: -126px;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    left: unset;
+}
+.ijs-link-drop-clock {
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    top: 100%;
+    z-index: 999;
+    display: none;
+    left: unset;
+}
+.ijs-link-drop-loan {
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    /* bottom: 0; */
+    z-index: 999;
+    display: none;
+    top: 100%;
+}
+
+.top-bar.mobile-hide {
+    display: none;
+} 
+
+.ijs-icon-bar-scroll.active {
+    display: none;
+}
+}

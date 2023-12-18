@@ -1,0 +1,45 @@
+
+<!-- ijs script -->
+<script>
+	$(window).scroll(function (event) {
+		// Check window width before executing the scroll logic
+		if ($(window).width() > 991) {
+			if ($(this).scrollTop() > 850) {
+				$('#inner-ijs-icon-bar').removeClass('inner-ijs-icon-bar').addClass('inner-ijs-icon-bar-scroll');
+				$('#ijs-icon-bar').removeClass('ijs-icon-bar').addClass('ijs-icon-bar-scroll active');
+				$('#ijs-first-icon').addClass('ijs-first-icon-scroll');
+				$('#ijs-link-drop-form').removeClass('ijs-link-drop-form').addClass('ijs-link-drop-form-scroll');
+				$('#ijs-link-drop-clock').removeClass('ijs-link-drop-clock').addClass('ijs-link-drop-clock-scroll');
+				$('#ijs-link-drop-loan').addClass('ijs-link-drop-loan-scroll');
+				$('#ijs-link-drop-appointment').removeClass('ijs-link-drop-appointment').addClass('ijs-link-drop-appointment-scroll');
+				$('#ijs-link-drop-location').removeClass('ijs-link-drop-location').addClass('ijs-link-drop-location-scroll');
+			} else {
+				$('#inner-ijs-icon-bar').removeClass('inner-ijs-icon-bar-scroll').addClass('inner-ijs-icon-bar');
+				$('#ijs-icon-bar').removeClass('ijs-icon-bar-scroll active').addClass('ijs-icon-bar');
+				$('#ijs-first-icon').removeClass('ijs-first-icon-scroll');
+				$('#ijs-link-drop-clock').removeClass('ijs-link-drop-clock-scroll').addClass('ijs-link-drop-clock');
+				$('#ijs-link-drop-form').removeClass('ijs-link-drop-form-scroll').addClass('ijs-link-drop-form');
+				$('#ijs-link-drop-loan').removeClass('ijs-link-drop-loan-scroll');
+				$('#ijs-link-drop-appointment').removeClass('ijs-link-drop-appointment-scroll').addClass('ijs-link-drop-appointment');
+				$('#ijs-link-drop-location').removeClass('ijs-link-drop-location-scroll').addClass('ijs-link-drop-location');
+			}
+		}
+	});
+</script>
+<script>
+	$(window).scroll(function () {
+		// Check window width and scroll position
+		var windowWidth = $(window).width();
+		var scrollPosition = $(this).scrollTop();
+
+		if (windowWidth <= 991 && scrollPosition > 190) {
+			$('.ijs-icon-bar').addClass('active-mob');
+		} else {
+			$('.ijs-icon-bar').removeClass('active-mob');
+		}
+	});
+</script>
+
+
+
+<!-- ijs script end -->
